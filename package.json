@@ -1,0 +1,21 @@
+{
+  "name": "tasknoting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "npm start --prefix client",
+    "preview":"npm run serve --prefix client",
+    "production":"concurrently \"npm run preview\"  \"npm run server\"",
+    "start":"concurrently \"npm run client\"  \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
