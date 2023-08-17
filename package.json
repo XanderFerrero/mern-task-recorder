@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "node server/index.js",
+    "server": "npm start --prefix server",
     "client": "npm start --prefix client",
     "preview": "npm run preview --prefix client",
     "production": "concurrently \"npm run preview\"  \"npm run server\"",
